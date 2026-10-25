@@ -1,0 +1,702 @@
+{
+ "model": "RF",
+ "ablation": {
+  "full|RF": {
+   "AUC": 0.8861572916948564,
+   "KS": 0.6069742589783077,
+   "AP": 0.2977687618789123,
+   "Precision": 0.33214046074703646,
+   "Recall": 0.44421178582111875,
+   "F1": 0.38008702329152805,
+   "Brier": 0.00976370388054456,
+   "BSS": 0.19169970570982886,
+   "ECE": 0.0016266685534292022,
+   "PredictedDefaults": 3381.8194880493384,
+   "ActualDefaults": 3343,
+   "raw_mean_probability": 0.20587623245162393,
+   "calibration_method": "isotonic"
+  },
+  "without_macro|RF": {
+   "AUC": 0.8850722294185756,
+   "KS": 0.6074683997460371,
+   "AP": 0.3114316825611622,
+   "Precision": 0.3855457227138643,
+   "Recall": 0.3909661980257254,
+   "F1": 0.38823704143769494,
+   "Brier": 0.009745935657553155,
+   "BSS": 0.1931706700127902,
+   "ECE": 0.0009166160768846053,
+   "PredictedDefaults": 3411.9386966580605,
+   "ActualDefaults": 3343,
+   "raw_mean_probability": 0.20456094466022615,
+   "calibration_method": "platt"
+  },
+  "without_payment_history|RF": {
+   "AUC": 0.7897091496465181,
+   "KS": 0.44446176691644934,
+   "AP": 0.04730893749370703,
+   "Precision": 0.09296657381615599,
+   "Recall": 0.07986838169309003,
+   "F1": 0.08592115848753017,
+   "Brier": 0.011925124180812338,
+   "BSS": 0.012763854503559546,
+   "ECE": 0.003442025149353019,
+   "PredictedDefaults": 2402.0535849213657,
+   "ActualDefaults": 3343,
+   "raw_mean_probability": 0.20033904524474325,
+   "calibration_method": "isotonic"
+  },
+  "origination_only|RF": {
+   "AUC": 0.790585643798767,
+   "KS": 0.44037801158894313,
+   "AP": 0.048741259315198966,
+   "Precision": 0.08049689440993789,
+   "Recall": 0.09691893508824409,
+   "F1": 0.08794788273615636,
+   "Brier": 0.011992372096017282,
+   "BSS": 0.007196652720753649,
+   "ECE": 0.004095272793039556,
+   "PredictedDefaults": 2852.9390312462847,
+   "ActualDefaults": 3343,
+   "raw_mean_probability": 0.22936993065732472,
+   "calibration_method": "isotonic"
+  }
+ },
+ "imbalance": {
+  "class_weights|RF": {
+   "AUC": 0.8861572916948564,
+   "KS": 0.6069742589783077,
+   "AP": 0.2977687618789123,
+   "Precision": 0.33214046074703646,
+   "Recall": 0.44421178582111875,
+   "F1": 0.38008702329152805,
+   "Brier": 0.009763703880544561,
+   "BSS": 0.19169970570982875,
+   "ECE": 0.0016266685534292022,
+   "PredictedDefaults": 3381.8194880493384,
+   "ActualDefaults": 3343,
+   "raw_mean_probability": 0.20587623245162393,
+   "calibration_method": "isotonic"
+  },
+  "smote|RF": {
+   "AUC": 0.8817894099401397,
+   "KS": 0.6001972120843333,
+   "AP": 0.30795961088296697,
+   "Precision": 0.34598266572967906,
+   "Recall": 0.4418187256954831,
+   "F1": 0.3880714661061482,
+   "Brier": 0.0097500284216196,
+   "BSS": 0.19283184548064114,
+   "ECE": 0.002031779730699516,
+   "PredictedDefaults": 3846.8246729676557,
+   "ActualDefaults": 3343,
+   "raw_mean_probability": 0.03597055027700131,
+   "calibration_method": "platt"
+  },
+  "class_weights|LR": {
+   "AUC": 0.8946732823643218,
+   "KS": 0.6112214738796891,
+   "AP": 0.2645662839227626,
+   "Precision": 0.3369491525423729,
+   "Recall": 0.4460065809153455,
+   "F1": 0.3838825952626159,
+   "Brier": 0.010033236736946793,
+   "BSS": 0.16938609503336044,
+   "ECE": 0.0027131103439401024,
+   "PredictedDefaults": 4054.8662559525796,
+   "ActualDefaults": 3343,
+   "raw_mean_probability": 0.32676155038709626,
+   "calibration_method": "isotonic"
+  },
+  "smote|LR": {
+   "AUC": 0.8946774559534553,
+   "KS": 0.6174116028088753,
+   "AP": 0.26925829560508624,
+   "Precision": 0.3342234089897641,
+   "Recall": 0.4492970385880945,
+   "F1": 0.38330994002807195,
+   "Brier": 0.010018460286048327,
+   "BSS": 0.17060938178559315,
+   "ECE": 0.002844312713465029,
+   "PredictedDefaults": 4097.2798970125505,
+   "ActualDefaults": 3343,
+   "raw_mean_probability": 0.08053082534121377,
+   "calibration_method": "isotonic"
+  }
+ },
+ "groups": {
+  "score_band=680-719": {
+   "AUC": 0.8482551077830538,
+   "KS": 0.5484230977769745,
+   "AP": 0.32121500300800926,
+   "Precision": 0.33291614518147683,
+   "Recall": 0.48363636363636364,
+   "F1": 0.39436619718309857,
+   "Brier": 0.018931638954337447,
+   "BSS": 0.19985710240391696,
+   "ECE": 0.0027366566450592526,
+   "PredictedDefaults": 1128.1799415457845,
+   "ActualDefaults": 1100,
+   "n": 45364
+  },
+  "score_band=720-759": {
+   "AUC": 0.8356771373908768,
+   "KS": 0.5043418326106555,
+   "AP": 0.2644890269828952,
+   "Precision": 0.328719723183391,
+   "Recall": 0.3706111833550065,
+   "F1": 0.3484107579462103,
+   "Brier": 0.008660973249931416,
+   "BSS": 0.1721932026770736,
+   "ECE": 0.0016270905750742641,
+   "PredictedDefaults": 692.1754887232685,
+   "ActualDefaults": 769,
+   "n": 72723
+  },
+  "score_band=<680": {
+   "AUC": 0.8213661107511607,
+   "KS": 0.5219878388066133,
+   "AP": 0.3527848396246276,
+   "Precision": 0.3299462044231919,
+   "Recall": 0.5443786982248521,
+   "F1": 0.4108671380721995,
+   "Brier": 0.0332597080084576,
+   "BSS": 0.20045159916633437,
+   "ECE": 0.010856533974280519,
+   "PredictedDefaults": 1168.427598483042,
+   "ActualDefaults": 1014,
+   "n": 23316
+  },
+  "score_band=>=760": {
+   "AUC": 0.8358646855951898,
+   "KS": 0.5118205126084475,
+   "AP": 0.19776174616346984,
+   "Precision": 0.3493975903614458,
+   "Recall": 0.25217391304347825,
+   "F1": 0.29292929292929293,
+   "Brier": 0.0030700343179524314,
+   "BSS": 0.11672035935003466,
+   "ECE": 0.0006519728355603215,
+   "PredictedDefaults": 392.60182757897314,
+   "ActualDefaults": 460,
+   "n": 131885
+  },
+  "vintage_group=2022": {
+   "AUC": 0.8981446898589969,
+   "KS": 0.6440915550744097,
+   "AP": 0.34604577080904153,
+   "Precision": 0.32485604606525914,
+   "Recall": 0.5219737856592136,
+   "F1": 0.4004732327713694,
+   "Brier": 0.011430377382292072,
+   "BSS": 0.22448192823607327,
+   "ECE": 0.001988543976881631,
+   "PredictedDefaults": 1268.9394481676704,
+   "ActualDefaults": 1297,
+   "n": 86681
+  },
+  "vintage_group=2023": {
+   "AUC": 0.8887423489049241,
+   "KS": 0.6048969966764723,
+   "AP": 0.31789711011709254,
+   "Precision": 0.3365794278758369,
+   "Recall": 0.46983857264231094,
+   "F1": 0.3921985815602837,
+   "Brier": 0.010553902784196328,
+   "BSS": 0.20617005723651194,
+   "ECE": 0.0018713812411763051,
+   "PredictedDefaults": 1135.0174836713709,
+   "ActualDefaults": 1177,
+   "n": 87337
+  },
+  "vintage_group=2024": {
+   "AUC": 0.8665156867408805,
+   "KS": 0.5761725013714358,
+   "AP": 0.2061608894734424,
+   "Precision": 0.35131396957123096,
+   "Recall": 0.3031026252983294,
+   "F1": 0.32543241511851373,
+   "Brier": 0.007889894748495883,
+   "BSS": 0.12604158384865916,
+   "ECE": 0.0013954297403999361,
+   "PredictedDefaults": 926.8647354594439,
+   "ActualDefaults": 838,
+   "n": 91979
+  },
+  "vintage_group=2025": {
+   "AUC": 0.8026708904139682,
+   "KS": 0.49161694536954864,
+   "AP": 0.04495375866928171,
+   "Precision": 0.047619047619047616,
+   "Recall": 0.03225806451612903,
+   "F1": 0.03846153846153846,
+   "Brier": 0.004185046984233366,
+   "BSS": 0.0004311078946097613,
+   "ECE": 0.0032512612622434883,
+   "PredictedDefaults": 50.997820750853364,
+   "ActualDefaults": 31,
+   "n": 7373
+  },
+  "ltv_band=80-90": {
+   "AUC": 0.8628527340022908,
+   "KS": 0.5532311781343567,
+   "AP": 0.2650820355111834,
+   "Precision": 0.3125,
+   "Recall": 0.3819444444444444,
+   "F1": 0.34375,
+   "Brier": 0.010083308307715862,
+   "BSS": 0.16608813948421142,
+   "ECE": 0.0022337105410007237,
+   "PredictedDefaults": 439.28053089532074,
+   "ActualDefaults": 432,
+   "n": 35290
+  },
+  "ltv_band=<=80": {
+   "AUC": 0.9015000965171867,
+   "KS": 0.6550397886245038,
+   "AP": 0.3181399960221589,
+   "Precision": 0.3110938712179985,
+   "Recall": 0.4902200488997555,
+   "F1": 0.38063597532036075,
+   "Brier": 0.007438581832437771,
+   "BSS": 0.20689240844715673,
+   "ECE": 0.0016874580959202815,
+   "PredictedDefaults": 1856.1568303494353,
+   "ActualDefaults": 1636,
+   "n": 172780
+  },
+  "ltv_band=>90": {
+   "AUC": 0.8466057590861413,
+   "KS": 0.5357490563581935,
+   "AP": 0.287137978498206,
+   "Precision": 0.37948717948717947,
+   "Recall": 0.40627450980392155,
+   "F1": 0.39242424242424245,
+   "Brier": 0.015743118080192624,
+   "BSS": 0.17764877537642543,
+   "ECE": 0.002888481978490313,
+   "PredictedDefaults": 1086.3821268045826,
+   "ActualDefaults": 1275,
+   "n": 65300
+  },
+  "loan_purpose=C": {
+   "AUC": 0.8784210865544271,
+   "KS": 0.5770593160606075,
+   "AP": 0.33274025611714186,
+   "Precision": 0.308265078183172,
+   "Recall": 0.5123762376237624,
+   "F1": 0.38493723849372385,
+   "Brier": 0.014744872360779204,
+   "BSS": 0.20633906284009884,
+   "ECE": 0.004088611486948177,
+   "PredictedDefaults": 909.4948719017203,
+   "ActualDefaults": 808,
+   "n": 42668
+  },
+  "loan_purpose=N": {
+   "AUC": 0.8919017003575626,
+   "KS": 0.6571917490825254,
+   "AP": 0.25812827534405386,
+   "Precision": 0.2926829268292683,
+   "Recall": 0.44171779141104295,
+   "F1": 0.35207823960880197,
+   "Brier": 0.0069409019475606465,
+   "BSS": 0.16579814924815628,
+   "ECE": 0.0011494805922900434,
+   "PredictedDefaults": 174.05447714425634,
+   "ActualDefaults": 163,
+   "n": 19426
+  },
+  "loan_purpose=P": {
+   "AUC": 0.8846129555446174,
+   "KS": 0.6038061553596772,
+   "AP": 0.29054080289080586,
+   "Precision": 0.3466342817487856,
+   "Recall": 0.4211635750421585,
+   "F1": 0.38028169014084506,
+   "Brier": 0.0090172833388621,
+   "BSS": 0.18770345190165227,
+   "ECE": 0.0010976465216285321,
+   "PredictedDefaults": 2298.270139003362,
+   "ActualDefaults": 2372,
+   "n": 211276
+  }
+ },
+ "confusion": {
+  "TP": 1485,
+  "FN": 1858,
+  "FP": 2986,
+  "TN": 267041,
+  "threshold": 0.17452830188679244
+ },
+ "error_profiles": {
+  "TP": {
+   "credit_score": 694.3265993265993,
+   "orig_ltv": 79.10909090909091,
+   "orig_dti": 40.49158249158249,
+   "current_ltv_estimated": 72.25218658892128,
+   "loan_age": 19.814141414141414,
+   "current_dq": 1.162962962962963,
+   "worst_dq_12m": 2.4269360269360267,
+   "has_assistance": 0.1447811447811448,
+   "state_unemployment_change_12m": 0.34915824915824917,
+   "share_current_at_snapshot": 0.19326599326599325
+  },
+  "FN": {
+   "credit_score": 713.4138858988159,
+   "orig_ltv": 81.55274488697525,
+   "orig_dti": 41.09526372443488,
+   "current_ltv_estimated": 75.55515370705244,
+   "loan_age": 17.918191603875133,
+   "current_dq": 0.01022604951560818,
+   "worst_dq_12m": 0.37190527448869753,
+   "has_assistance": 0.014531754574811625,
+   "state_unemployment_change_12m": 0.34062499999999996,
+   "share_current_at_snapshot": 0.9897739504843919
+  },
+  "FP": {
+   "credit_score": 694.313567839196,
+   "orig_ltv": 76.40756865371735,
+   "orig_dti": 39.95579370395178,
+   "current_ltv_estimated": 69.47364568081991,
+   "loan_age": 20.259209645010046,
+   "current_dq": 0.7451440053583389,
+   "worst_dq_12m": 1.9561286001339584,
+   "has_assistance": 0.055592766242464835,
+   "state_unemployment_change_12m": 0.33475201072386057,
+   "share_current_at_snapshot": 0.32886805090421967
+  },
+  "TN": {
+   "credit_score": 750.1809184896614,
+   "orig_ltv": 75.0586464250808,
+   "orig_dti": 37.60775340690781,
+   "current_ltv_estimated": 68.08936831572731,
+   "loan_age": 17.280432592747932,
+   "current_dq": 0.0006890327702487633,
+   "worst_dq_12m": 0.03105515632430975,
+   "has_assistance": 0.00022842934231073132,
+   "state_unemployment_change_12m": 0.33336204765578764,
+   "share_current_at_snapshot": 0.9993184567163844
+  }
+ },
+ "false_negative_probability_quantiles": {
+  "0.1": 0.0024035062915311748,
+  "0.25": 0.004904632152588556,
+  "0.5": 0.014218009478672985,
+  "0.75": 0.032612205360025834,
+  "0.9": 0.0959409594095941
+ },
+ "defaults_current_at_snapshot_share": 0.6359557283876758,
+ "calibration_curve": [
+  {
+   "mean_predicted": 0.00021210231980259953,
+   "observed": 0.0005121264220653327,
+   "n": 27337
+  },
+  {
+   "mean_predicted": 0.0005232790815686908,
+   "observed": 0.0009145114679738084,
+   "n": 27337
+  },
+  {
+   "mean_predicted": 0.0015830502291698427,
+   "observed": 0.0016827011010718074,
+   "n": 27337
+  },
+  {
+   "mean_predicted": 0.0016681123640488425,
+   "observed": 0.0017558620185097122,
+   "n": 27337
+  },
+  {
+   "mean_predicted": 0.0023599243804549846,
+   "observed": 0.0029995976149540917,
+   "n": 27337
+  },
+  {
+   "mean_predicted": 0.002548283875187239,
+   "observed": 0.0033654022021436148,
+   "n": 27337
+  },
+  {
+   "mean_predicted": 0.004035030622184261,
+   "observed": 0.005523649266561802,
+   "n": 27337
+  },
+  {
+   "mean_predicted": 0.007112644837236932,
+   "observed": 0.008230603211764276,
+   "n": 27337
+  },
+  {
+   "mean_predicted": 0.01200456182099001,
+   "observed": 0.014485861652705125,
+   "n": 27337
+  },
+  {
+   "mean_predicted": 0.09166151864689394,
+   "observed": 0.08281815853970809,
+   "n": 27337
+  }
+ ],
+ "shap_mean_abs": {
+  "credit_score": 0.13929421122345165,
+  "months_delinquent_12m": 0.055585773201617596,
+  "number_of_borrowers": 0.04948430788274301,
+  "worst_dq_12m": 0.04571782599994068,
+  "orig_dti": 0.037037126841869404,
+  "upb_paid_share": 0.025779357717672396,
+  "loan_purpose_C": 0.02033910903599536,
+  "current_dq": 0.01960872419648404,
+  "orig_ltv": 0.017709113857200254,
+  "orig_cltv": 0.016910502933652285,
+  "current_upb": 0.015149240398060614,
+  "orig_upb": 0.01148951379944963,
+  "current_ltv_estimated": 0.007559095436631933,
+  "state_unemployment": 0.006338101355010766,
+  "rate_gap": 0.005366773703689237,
+  "mi_percent": 0.005257052484551223,
+  "orig_rate": 0.004844584455823942,
+  "current_rate": 0.004833458320559224,
+  "loan_purpose_P": 0.004610808619836131,
+  "occupancy_P": 0.0037343439932429686,
+  "channel_B": 0.003341478327805344,
+  "state_unemployment_change_12m": 0.0026399706515560133,
+  "first_time_buyer_N": 0.0023120997361648675,
+  "first_time_buyer_Y": 0.0022271579049491846,
+  "loan_age": 0.001643801364405178,
+  "has_assistance": 0.0014221776979090948,
+  "property_type_SF": 0.0013842449738313575,
+  "channel_R": 0.0012924104606759548,
+  "orig_term": 0.0011582484916228609,
+  "channel_C": 0.0010963827423718234,
+  "property_type_CO": 0.0008730244769797079,
+  "property_type_PU": 0.0008395574695806817,
+  "loan_purpose_N": 0.000614940629884981,
+  "occupancy_I": 0.0006019902915559797,
+  "number_of_units": 0.0005372222414093465,
+  "property_type_MH": 0.00013591669950376237,
+  "occupancy_S": 0.0001210251534205504,
+  "is_modified": 0.0,
+  "property_type_CP": 0.0
+ },
+ "shap_ranking": [
+  [
+   "credit_score",
+   0.13929421122345165
+  ],
+  [
+   "months_delinquent_12m",
+   0.055585773201617596
+  ],
+  [
+   "number_of_borrowers",
+   0.04948430788274301
+  ],
+  [
+   "worst_dq_12m",
+   0.04571782599994068
+  ],
+  [
+   "orig_dti",
+   0.037037126841869404
+  ],
+  [
+   "upb_paid_share",
+   0.025779357717672396
+  ],
+  [
+   "loan_purpose",
+   0.025564858285716474
+  ],
+  [
+   "current_dq",
+   0.01960872419648404
+  ],
+  [
+   "orig_ltv",
+   0.017709113857200254
+  ],
+  [
+   "orig_cltv",
+   0.016910502933652285
+  ],
+  [
+   "current_upb",
+   0.015149240398060614
+  ],
+  [
+   "orig_upb",
+   0.01148951379944963
+  ],
+  [
+   "current_ltv_estimated",
+   0.007559095436631933
+  ],
+  [
+   "state_unemployment",
+   0.006338101355010766
+  ],
+  [
+   "channel",
+   0.005730271530853122
+  ],
+  [
+   "rate_gap",
+   0.005366773703689237
+  ],
+  [
+   "mi_percent",
+   0.005257052484551223
+  ],
+  [
+   "orig_rate",
+   0.004844584455823942
+  ],
+  [
+   "current_rate",
+   0.004833458320559224
+  ],
+  [
+   "first_time_buyer",
+   0.004539257641114052
+  ],
+  [
+   "occupancy",
+   0.004457359438219498
+  ],
+  [
+   "property_type",
+   0.00323274361989551
+  ],
+  [
+   "state_unemployment_change_12m",
+   0.0026399706515560133
+  ],
+  [
+   "loan_age",
+   0.001643801364405178
+  ],
+  [
+   "has_assistance",
+   0.0014221776979090948
+  ],
+  [
+   "orig_term",
+   0.0011582484916228609
+  ],
+  [
+   "number_of_units",
+   0.0005372222414093465
+  ],
+  [
+   "is_modified",
+   0.0
+  ]
+ ],
+ "reduction": [
+  {
+   "k": 5,
+   "features": [
+    "credit_score",
+    "months_delinquent_12m",
+    "number_of_borrowers",
+    "worst_dq_12m",
+    "orig_dti"
+   ],
+   "validation_mcnemar_p": 0.7599430644069374,
+   "only_full_correct": 654,
+   "only_reduced_correct": 642,
+   "test_AUC": 0.8671813544540451,
+   "test_AP": 0.21800231415687654,
+   "test_BSS": 0.137066242591246
+  },
+  {
+   "k": 10,
+   "features": [
+    "credit_score",
+    "months_delinquent_12m",
+    "number_of_borrowers",
+    "worst_dq_12m",
+    "orig_dti",
+    "upb_paid_share",
+    "loan_purpose",
+    "current_dq",
+    "orig_ltv",
+    "orig_cltv"
+   ],
+   "validation_mcnemar_p": 1.7759637345239386e-29,
+   "only_full_correct": 68,
+   "only_reduced_correct": 279,
+   "test_AUC": 0.8794195579611115,
+   "test_AP": 0.3023568992086524,
+   "test_BSS": 0.19096256951939738
+  },
+  {
+   "k": 15,
+   "features": [
+    "credit_score",
+    "months_delinquent_12m",
+    "number_of_borrowers",
+    "worst_dq_12m",
+    "orig_dti",
+    "upb_paid_share",
+    "loan_purpose",
+    "current_dq",
+    "orig_ltv",
+    "orig_cltv",
+    "current_upb",
+    "orig_upb",
+    "current_ltv_estimated",
+    "state_unemployment",
+    "channel"
+   ],
+   "validation_mcnemar_p": 5.724668335212865e-24,
+   "only_full_correct": 61,
+   "only_reduced_correct": 236,
+   "test_AUC": 0.8843223188123128,
+   "test_AP": 0.3034561950351119,
+   "test_BSS": 0.18971697826379497
+  },
+  {
+   "k": 28,
+   "features": [
+    "credit_score",
+    "months_delinquent_12m",
+    "number_of_borrowers",
+    "worst_dq_12m",
+    "orig_dti",
+    "upb_paid_share",
+    "loan_purpose",
+    "current_dq",
+    "orig_ltv",
+    "orig_cltv",
+    "current_upb",
+    "orig_upb",
+    "current_ltv_estimated",
+    "state_unemployment",
+    "channel",
+    "rate_gap",
+    "mi_percent",
+    "orig_rate",
+    "current_rate",
+    "first_time_buyer",
+    "occupancy",
+    "property_type",
+    "state_unemployment_change_12m",
+    "loan_age",
+    "has_assistance",
+    "orig_term",
+    "number_of_units",
+    "is_modified"
+   ],
+   "validation_mcnemar_p": 1.0,
+   "only_full_correct": 0,
+   "only_reduced_correct": 0,
+   "test_AUC": 0.8861572916948564,
+   "test_AP": 0.2977687618789123,
+   "test_BSS": 0.19169970570982797
+  }
+ ],
+ "seconds": 191.1541829109192
+}

@@ -1,0 +1,65 @@
+[
+ {
+  "snapshot": 202212,
+  "rows_at_snapshot": 45248,
+  "removed_inactive_or_zero_balance": 88,
+  "removed_unknown_status": 0,
+  "removed_already_90dpd": 63,
+  "kept": 45097,
+  "defaults": 431
+ },
+ {
+  "snapshot": 202303,
+  "rows_at_snapshot": 55920,
+  "removed_inactive_or_zero_balance": 218,
+  "removed_unknown_status": 0,
+  "removed_already_90dpd": 109,
+  "kept": 55593,
+  "defaults": 576
+ },
+ {
+  "snapshot": 202306,
+  "rows_at_snapshot": 68636,
+  "removed_inactive_or_zero_balance": 348,
+  "removed_unknown_status": 0,
+  "removed_already_90dpd": 171,
+  "kept": 68117,
+  "defaults": 712
+ },
+ {
+  "snapshot": 202309,
+  "rows_at_snapshot": 80819,
+  "removed_inactive_or_zero_balance": 322,
+  "removed_unknown_status": 0,
+  "removed_already_90dpd": 264,
+  "kept": 80233,
+  "defaults": 876
+ },
+ {
+  "snapshot": 202312,
+  "rows_at_snapshot": 92557,
+  "removed_inactive_or_zero_balance": 302,
+  "removed_unknown_status": 0,
+  "removed_already_90dpd": 360,
+  "kept": 91895,
+  "defaults": 1119
+ },
+ {
+  "snapshot": 202412,
+  "rows_at_snapshot": 133972,
+  "removed_inactive_or_zero_balance": 858,
+  "removed_unknown_status": 0,
+  "removed_already_90dpd": 874,
+  "kept": 132240,
+  "defaults": 1613
+ },
+ {
+  "snapshot": 202503,
+  "rows_at_snapshot": 143091,
+  "removed_inactive_or_zero_balance": 1019,
+  "removed_unknown_status": 0,
+  "removed_already_90dpd": 942,
+  "kept": 141130,
+  "defaults": 1730
+ }
+]
